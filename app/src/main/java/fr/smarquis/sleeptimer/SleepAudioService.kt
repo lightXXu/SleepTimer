@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit.SECONDS
 class SleepAudioService : android.app.IntentService("SleepAudioService") {
 
     companion object {
-        private val FADE_STEP_MILLIS = SECONDS.toMillis(1)
+        private val FADE_STEP_MILLIS = SECONDS.toMillis(10)
 
         private fun intent(context: Context) = Intent(context, SleepAudioService::class.java)
         fun pendingIntent(context: Context): PendingIntent? = PendingIntent.getService(context, 0, intent(context), FLAG_IMMUTABLE)

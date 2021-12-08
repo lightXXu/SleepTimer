@@ -5,10 +5,11 @@ plugins {
 
 val versionMajor = 1
 val versionMinor = 1
-val versionPatch = 0
+val versionPatch = 1
 val versionBuild = 0
 
 android {
+    buildToolsVersion = "31.0.0"
     compileSdk = 31
     defaultConfig {
         applicationId = "fr.smarquis.sleeptimer"
